@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 /*
- *<a href="https://www.beecrowd.com.br/judge/en/problems/view/1120">ContractRevision</a>
+https://www.beecrowd.com.br/judge/en/problems/view/1120">ContractRevision
 */
 
 public class Main {
