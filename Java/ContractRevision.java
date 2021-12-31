@@ -8,7 +8,6 @@ https://www.beecrowd.com.br/judge/en/problems/view/1120">ContractRevision
 
 public class Main {
 
-
 	public static void main(String[] args) throws IOException {
 		
 		Scanner scan = new Scanner(System.in);
@@ -16,7 +15,6 @@ public class Main {
 		String NStr = new String();
 		String DStr = new String();
 		boolean flag = true;
-		
 		
 		while(flag) {
 			
@@ -37,7 +35,6 @@ public class Main {
 			}
 
 		}
-		
 
 	}
 
