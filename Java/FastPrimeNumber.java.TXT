@@ -1,0 +1,49 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String[] args) throws IOException {
+	
+		Scanner scan = new Scanner(System.in);
+		
+		int N = scan.nextInt();
+		
+		while(N > 0) {
+			
+			try {
+
+				String toTestStr = scan.next();
+				long numberToTest = Long.parseLong(toTestStr);
+				
+				boolean prime = true;
+				
+				if(numberToTest == 1 || (numberToTest % 2 == 0 && numberToTest != 2)) {
+					
+					prime = false;
+				
+				}else if(numberToTest > 3) {
+					
+					for(int i = 3; i <= Math.sqrt(numberToTest); i += 2)
+						if(numberToTest != i && numberToTest % i == 0) {
+							
+							prime = false;
+							break;
+							
+						}
+				}
+	
+				
+				System.out.println(prime == true ? "Prime" : "Not Prime");
+				prime = true;
+				
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			N--;
+				
+		}
+		
+	}
+}
