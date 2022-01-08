@@ -5,14 +5,12 @@ import java.util.Scanner;
 public class OnlineJudge {
 	
 	static int serie(int n, int count) {
-		
-		
+
 		if(n > 1) {
 			
 			count = serie( (n % 2 == 0) ? n/2 : (3*n + 1), count);
 			count++;
 		}
-		
 		
 		return count;
 	}
@@ -39,12 +37,7 @@ public class OnlineJudge {
 			
 			System.out.println(String.format("%d %d %d", i, j, bigger));
 			bigger = 0;
-		
-		
-		}
-		
-		
-
+	
+		}		
 	}
-
 }

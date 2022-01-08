@@ -3,16 +3,13 @@ package uri;
 import java.util.Scanner;
 
 public class Main {
-
 	
 	static String encrypt(StringBuilder password) {
 		
 		//Step 1
-		
 		StringBuilder newPassword = new StringBuilder(password);
 		
 		for(int c = 0; c < newPassword.length(); c++) {
-			
 			
 			char carac = newPassword.charAt(c);
 			
@@ -20,11 +17,7 @@ public class Main {
 				
 				newPassword.setCharAt(c, (char)((int)carac + 3));
 			}
-			
-			
-
 		}
-		
 		
 		//Step 2
 		newPassword = newPassword.reverse();
@@ -38,7 +31,6 @@ public class Main {
 			newPassword.setCharAt(c, (char)((int)carac - 1));
 			
 		}
-		
 		
 		return newPassword.toString();
 		
@@ -66,8 +58,7 @@ public class Main {
 			
 			System.out.println(encrypt(password));
 			lines++;
-			
-			
+				
 		}
 
 	}
